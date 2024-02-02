@@ -36,15 +36,9 @@ export default function MyCalendar() {
       resourceId: 'sala2',
     },
     {
-      title: 'Evento 2',
+      title: 'Evento 3',
       start: new Date(2024, 1, 2, 12, 0),
       end: new Date(2024, 1, 2, 13, 0),
-      resourceId: 'sala3',
-    },
-    {
-      title: 'Evento 2',
-      start: new Date(2024, 1, 2, 14, 0),
-      end: new Date(2024, 1, 2, 15, 0),
       resourceId: 'sala3',
     },
   ];
@@ -63,7 +57,7 @@ export default function MyCalendar() {
     week: 'Semana',
     day: 'Dia',
   };
-  
+
   const min = addHours(startOfDay(new Date()), 6);
   const max = addHours(startOfDay(new Date()), 19);
 
