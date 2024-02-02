@@ -21,7 +21,7 @@
     "react-dom": "^18",
     "tailwind-merge": "^2.2.1",
     "tailwindcss-animate": "^1.0.7",
-    "vercel": "latest"
+    "vercel": "^33.4.1"
   },
   "devDependencies": {
     "@types/globalize": "^1.5.5",
