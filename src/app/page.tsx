@@ -28,18 +28,21 @@ export default function MyCalendar() {
       start: addHours((startOfDay(new Date())), 8),
       end: addHours((startOfDay(new Date())), 9),
       resourceId: 'sala1',
+      color: '#c50371'
     },
     {
       title: 'Evento 2',
       start: addHours((startOfDay(new Date())), 9),
       end: addHours((startOfDay(new Date())), 10),
       resourceId: 'sala2',
+      color: '#0371c5'
     },
     {
       title: 'Evento 3',
       start: addHours((startOfDay(new Date())), 10),
       end: addHours((startOfDay(new Date())), 11),
       resourceId: 'sala3',
+      color: '#03c52d'
     },
   ];
 
@@ -79,11 +82,11 @@ export default function MyCalendar() {
         onSelectEvent={handleSelect}
         min={min}
         max={max}
-        eventPropGetter={event => {
+        eventPropGetter={(event: any) => {
           return {
             style: {
-              /*               backgroundColor: '#010036',
-                            color: '#fff',
+              backgroundColor: event.color,
+              /*                color: '#fff',
                             borderRadius: '4px', */
             }
           }
