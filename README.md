@@ -20,24 +20,26 @@ Altere os eventos e os resources
   const events = [
     {
       title: 'Evento 1',
-      start: new Date(2024, 1, 2, 8, 0),
-      end: new Date(2024, 1, 2, 9, 0),
+      start: addHours((startOfDay(new Date())), 8),
+      end: addHours((startOfDay(new Date())), 9),
       resourceId: 'sala1',
+      color: '#c50371'
     },
     {
       title: 'Evento 2',
-      start: new Date(2024, 1, 2, 10, 0),
-      end: new Date(2024, 1, 2, 11, 0),
+      start: addHours((startOfDay(new Date())), 9),
+      end: addHours((startOfDay(new Date())), 10),
       resourceId: 'sala2',
+      color: '#0371c5'
     },
     {
       title: 'Evento 3',
-      start: new Date(2024, 1, 2, 12, 0),
-      end: new Date(2024, 1, 2, 13, 0),
+      start: addHours((startOfDay(new Date())), 10),
+      end: addHours((startOfDay(new Date())), 11),
       resourceId: 'sala3',
+      color: '#03c52d'
     },
   ];
-
   const resources = [
     { id: 'sala1', title: 'Sala 1' },
     { id: 'sala2', title: 'Sala 2' },
